@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+ 
+
+ <definition name="custom" template="/WEB-INF/jsp/custom.jsp">
+  </definition>
+  <definition name="adminhr" template="/WEB-INF/jsp/adminhumanresource.jsp">
+      <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>
+      
+  </definition>
+  <definition name="adminpast7" template="/WEB-INF/jsp/adminpast7.jsp">
+      <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>
+      
+  </definition>
+  <definition name="adminlogin" template="/WEB-INF/jsp/adminlogin.jsp"/>
+  
+  <definition name="adminsettings" template="/WEB-INF/jsp/adminsettings.jsp">
+          <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>     
+  </definition>
+  
+  <definition name="adminpage" template="/WEB-INF/jsp/adminpage.jsp">
+      <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>
+  </definition>
+  
+  
+    <definition name="org" template="/WEB-INF/jsp/adminorg.jsp">
+      <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>
+  </definition>
+  
+   <definition name="branch" template="/WEB-INF/jsp/adminbranch.jsp">
+      <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>
+  </definition>
+  
+    <definition name="feedback" template="/WEB-INF/jsp/adminfbpanel.jsp">
+      <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>
+  </definition>
+  
+    <definition name="iot" template="/WEB-INF/jsp/adminiot.jsp">
+      <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>
+  </definition>
+  
+   <definition name="page" template="/WEB-INF/jsp/adminpge.jsp">
+      <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>
+  </definition>
+  
+   <definition name="pageDetails" template="/WEB-INF/jsp/adminpagedetails.jsp">
+      <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>
+  </definition>
+  
+   <definition name="view" template="/WEB-INF/jsp/adminview.jsp">
+      <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>
+  </definition>
+   <definition name="rules" template="/WEB-INF/jsp/adminrules.jsp">
+      <put-attribute name="navigation" value="/WEB-INF/layout/adminlayout.jsp"/>
+  </definition>
+  
+ </tiles-definitions>
+ 
