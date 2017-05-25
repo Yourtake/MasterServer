@@ -70,12 +70,40 @@
                       <div class="col-sm-5 well col-sm-offset-2">
                      <label ><b><u>Update IoTs</u><b></label>
                                  <br/>
-                <form action="${pageContext.request.contextPath}/admin/branch/org/search" method="POST" class="form-signin-heading" >
-                      <input type="text" class="form-control" placeholder="Organization Url" name="url"  required="true"/>
-                    <br/>
-                      <button type="submit" class="btn btn-sm" style="background-color:#515151;color:#ffffff" >Update</button>
-                      <br/>
-                </form>
+                                  <div class="table-responsive">
+               <table class="table table-striped table-condensed table-hover table-bordered">
+              <thead>
+                <tr>
+                                 <th>Branch Id</th> 
+                                 <th>Branch Name</th> 
+                                 <th>Last live at </th>
+                                 
+                   
+     
+                </tr>
+              </thead>
+              <tbody>
+                    <c:forEach items="${branches}" var="item">
+                       
+                    <tr>
+                        
+                        <td>
+                                        <p ><c:out value="${item.id}"/></p>
+                        </td>
+                        <td>
+                                        <p ><c:out value="${item.name}"/></p>
+                        </td>
+                        <td>
+                                        <p ><c:out value="${item.status}"/></p>
+                        </td>
+		
+                
+                    </tr>                 
+                     </c:forEach>
+              </tbody>
+           </table>
+               </div>
+                   
                         <br/>
                  </div>
             </div>

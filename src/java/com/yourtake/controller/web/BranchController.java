@@ -78,7 +78,7 @@ public class BranchController {
                 if(org!=null){
                     org=orgService.fetchWithInnerList(org);
                      b.setMasterRelation(org);
-                    b.setView(viewService.search(request.getParameter("view_url")).getId());
+                    b.setViewPage(request.getParameter("view_url"));
                     b = bService.build(b);
                     org.getBranches().add(b);
                     orgService.update(org);

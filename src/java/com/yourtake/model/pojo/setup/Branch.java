@@ -32,7 +32,7 @@ public class Branch implements Serializable {
     @OneToOne
     private Organization masterRelation;
     //linking with view
-    private Long view;
+    private String viewPage;
     
   
     public String getStatus() {
@@ -83,13 +83,14 @@ public class Branch implements Serializable {
         this.masterRelation = masterRelation;
     }
 
-    public Long getView() {
-        return view;
+    public String getViewPage() {
+        return viewPage;
     }
 
-    public void setView(Long view) {
-        this.view = view;
+    public void setViewPage(String viewPage) {
+        this.viewPage = viewPage;
     }
+
 
   
 

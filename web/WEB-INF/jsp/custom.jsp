@@ -58,7 +58,7 @@
                                                         <div class="container box">                             
                                                                   <div class="row">
                                                                     <div class="col-xs-12">
-                                                                        <a  href="${pageContext.request.contextPath}/${page.relativeUrl}/${page.header.url}"> <h3 style="text-align: left"><span class="glyphicon glyphicon-circle-arrow-left"></span>&nbsp;Back</h3></a>
+                                                                        <a  href="${pageContext.request.contextPath}/show/${page.header.url}/${branchId}"> <h3 style="text-align: left"><span class="glyphicon glyphicon-circle-arrow-left"></span>&nbsp;Back</h3></a>
                                                                     </div>
                                                                  </div>
                                                         </div>
@@ -72,7 +72,7 @@
                                                                                                     <div class="col-xs-6 panel">
                                                                                                             <div class=" placeholder">
                                                                                                                     <br/>
-                                                                                                                    <a  href="${pageContext.request.contextPath}/${page.relativeUrl}/${tab.url}">
+                                                                                                                    <a  href="${pageContext.request.contextPath}/show/${tab.url}/${branchId}">
                                                                                                                             <img id="menu-box" src="${tab.imageUrl}" width="50" height="50" class="img-responsive" alt="Menu">
                                                                                                                                     <h4  class="text-muted">
                                                                                                                                             <b>${tab.text}</b>
@@ -90,7 +90,7 @@
                                                                      <c:if test="${not empty page.forms}">
                                                                             <div class="container">
                                                                                          <div class="row">      
-                                                                                                                   <form id="feedback-form" action="${pageContext.request.contextPath}/${page.relativeUrl}/${page.submitUrl}" method="POST" class="form-signin-heading" >
+                                                                                                                   <form id="feedback-form" action="${pageContext.request.contextPath}/fill/${page.submitUrl}/${branchId}" method="POST" class="form-signin-heading" >
 
                                                                                                                         <div class="form-group">
                                                                                                                         <div class="col-md-4" style="padding-right: 30px">

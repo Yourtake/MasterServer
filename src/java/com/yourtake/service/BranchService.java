@@ -29,5 +29,9 @@ public class BranchService {
     public Branch getBranch(String parameter) {
         return (Branch) dao.readProperty(Long.valueOf(parameter));
     }
+
+    public void update(Branch branch) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
